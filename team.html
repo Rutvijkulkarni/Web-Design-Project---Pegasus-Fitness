@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			PF | Pegasus Fitness
+		</title>
+		
+		<meta name="viewport" content="width-device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="icon" href="Images/brandlogo.png">
+	</head>
+	
+	<body>
+		<div class="navbar-static-topic" id="top">
+				<div class="container">
+					<div class="navbar-brand">
+						Pegasus Fitness
+					</div>
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						Menu
+					</button>
+					<div class="collapse navbar-collapse navHeaderCollapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="navigation"><a href="index.html">Home</a></li>
+							<li class="navigation"><a href="membership.html">Membership</a></li>
+							<li class="navigation"><a href="team.html">Our Team</a></li>
+							<li class="navigation"><a href="contact.html">Contact Us</a></li>
+						</ul>	
+					</div>
+				</div>
+		</div>
+		
+		<div class="jumbotron">
+			<div class="container">	
+				<h2>Our Fitness Team.</h2>
+				<h3>They make sure that what may seem impossible today, will one day become your warm up.</h3>
+			</div>	
+		</div>
+
+		<br/>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="honcho">The Honcho</h2>
+					<hr/>
+					<h2 class="honcho">Conor McGregor</h2>
+					<br/>
+					<img src="https://pbs.twimg.com/profile_images/798351849984294912/okhePpJW.jpg" class="img-circle img-responsive center-block">
+					<br/>
+					<p id="conortext">Pegasus Fitness, was the UFC Lightweight and former Featherweight champion's vision. His objective has always been to keep the Irish people fit and healthy and thus introduced a fitness centre in the heart of the city where he was born. </p>
+					<hr/>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		<br/>
+		<br/>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="http://gymflow100.com/wp-content/uploads/2012/06/personal-trainer_965841.jpg" class="img-circle img-responsive center-block">
+					<br/>
+					<h2 class="honcho">The Gym Team</h2>
+					<br/>
+					<p class="team">Before any trainer joins our gym team, we make sure that they pass the Certificate in strength and conditioning, thus making sure that what our trainers teach is uniform and professional.</p>
+				</div>
+
+				<div class="col-md-4">
+					<img src="http://www.thanyapura.com/wp-content/uploads/2014/03/miguel-swim-coach-pp-300x-300x300.png" class="img-circle img-responsive center-block">
+					<br/>
+					<h2 class="honcho">The Aqua Team</h2>
+					<br/>
+					<p class="team">100 metres freestyle in 30 seconds, is the record that you need to break to join the aqua team at pegasus. We also make sure that every trainer is registered with SwimIreland.</p>
+				</div>
+
+				<div class="col-md-4">
+					<img src="https://www.integrativemedicineaccess.org/wp-content/uploads/2013/11/massage-300x300.jpg" class="img-circle img-responsive center-block">
+					<br/>
+					<h2 class="honcho">The Therapy Team</h2>
+					<br/>
+					<p>Every Massage Therapist at our Spa & Sauna centres is registered with the Irish Massage Therapists Association. They give you just the right massage to get those muscles relaxed.</p>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		<br/>
+		<br/>
+		
+		<hr/>
+		
+		<div class="footer">
+			<div class="container">
+				<footer>
+					&copy; Pegasus Fitness 2016
+					<br/>
+					<a href="#top">Back To Top</a>
+				</footer>
+			</div>
+		</div>
+		
+		
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script>
+			$(function() {
+				$('a[href*="#"]:not([href="#"])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+						scrollTop: target.offset().top
+						}, 1000);
+						return false;
+						}
+					}	
+				});
+			});
+		</script>
+	</body>
+</html>	

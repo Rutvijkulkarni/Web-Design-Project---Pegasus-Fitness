@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			PF | Pegasus Fitness
+		</title>
+		
+		<meta name="viewport" content="width-device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="icon" href="Images/brandlogo.png">
+	</head>
+	
+	<body>
+		<div class="navbar-static-topic" id="top">
+				<div class="container">
+					<div class="navbar-brand">
+						Pegasus Fitness
+					</div>
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						Menu
+					</button>
+					<div class="collapse navbar-collapse navHeaderCollapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="navigation"><a href="index.html">Home</a></li>
+							<li class="navigation"><a href="membership.html">Membership</a></li>
+							<li class="navigation"><a href="team.html">Our Team</a></li>
+							<li class="navigation"><a href="contact.html">Contact Us</a></li>
+						</ul>	
+					</div>
+				</div>
+		</div>
+		
+		<div class="jumbotron">
+			<div class="container">
+				<h3 id="contact">We don't brag a lot, but we can definitely brag about the fact that our phone lines are open everyday, from 12 noon - 12 midnight. So that's 12 long hours. Point being, Dont' hesitate to contact us.</h3>
+			</div>
+		</div>
+		
+		<br/>
+		<br/>
+		<br/>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div id="map">
+
+					</div>
+				</div>
+				<div class="col-md-6">
+					<p id="rowright">PHONE : +353 (1) 991 7986<br/><br/>E-MAIL : INFO@PEGASUSFITNESS.COM<br/><br/>PEARSE SQUARE, GRAND CANAL DOCK,<br/>DUBLIN 2, IRELAND.<br/><br/>Open 365 days a year,<br/>Monday - Friday : 7am - 10pm<br/>Saturday & Sunday : 8am - 8pm</p>
+					<br/>
+					<a href="https://www.facebook.com/"><img src="https://cdn3.iconfinder.com/data/icons/cell-function/512/1_function-128.png" class="img-responsive img-circle social"></a><a href="https://www.instagram.com/"><img src="https://cdn3.iconfinder.com/data/icons/cell-function/512/19_function-128.png" class="img-responsive img-circle social"></a><a href="https://www.pinterest.com/"><img src="https://cdn3.iconfinder.com/data/icons/cell-function/512/18_function-128.png" class="img-responsive img-circle social"></a><a href="https://plus.google.com/"><img src="https://cdn3.iconfinder.com/data/icons/cell-function/512/6_function-128.png" class="img-responsive img-circle social"></a><a href="https://www.youtube.com/"><img src="https://cdn3.iconfinder.com/data/icons/cell-function/512/2_function-128.png" class="img-responsive img-circle social"></a>
+				</div>
+			</div>
+			
+			<br/>
+			<br/>
+			<br/>
+			
+			<hr/>
+			
+			<br/>
+			<br/>
+			<br/>
+			
+			<div class="row">
+				<div class="col-md-12">		
+					<div class="container padding" id="contact">
+						<form role="form">
+							<div class="form-group">
+								<label for="email">Email :</label>
+								<input type="email" class="form-control" id="email" name="email" placeholder="user@domain.com"/>
+							</div>
+							<div class="form-group">
+								<label for="name">Name :</label>
+								<input type="text" class="form-control" id="name" name="name" placeholder="Name"/>
+							</div>
+							<div class="form-group">
+								<label for="message">Message :</label>
+								<textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
+							</div>
+							<button type="submit" onclick="show_confirm()" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>	
+			
+		<br/>	
+		<br/>	
+		<br/>	
+			
+		<div class="footer">
+			<div class="container">
+				<footer>
+					&copy; Pegasus Fitness 2016
+					<br/>
+					<a href="#top">Back To Top</a>
+				</footer>
+			</div>
+		</div>
+		
+		
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script>
+			function myMap() {
+			var myCenter = new google.maps.LatLng(53.343498, -6.243);
+		    var mapCanvas = document.getElementById("map");
+		    var mapOptions = {center: myCenter, zoom: 5};
+		    var map = new google.maps.Map(mapCanvas, mapOptions);
+		    var marker = new google.maps.Marker({position:myCenter});
+		    marker.setMap(map);
+            }
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+		<script>
+			$(function() {
+				$('a[href*="#"]:not([href="#"])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+						scrollTop: target.offset().top
+						}, 1000);
+						return false;
+						}
+					}	
+				});
+			});
+		</script>
+		
+		<script>
+			function show_confirm()
+			{
+				var buttonClick=confirm("Thank you for your message. We will get back with a response as soon as possible.");
+			}
+		</script>
+
+	</body>
+</html>	

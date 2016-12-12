@@ -1,0 +1,86 @@
+body{
+	background-color:#ffffff;
+	letter-spacing:1.5px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+li a{
+	color:black;
+}
+li a:hover{
+	background-color:black;
+	text-decoration:none;
+}
+.navigation{
+	color:black;
+}
+
+.jumbotron{
+	background-color:#000000;
+	background-attachment:fixed;
+	color:white;
+}
+.members{
+	background-color:black;
+	color:white;
+	text-align:center;
+}
+.jumbomembers{
+	min-height:300px;
+	background-image:url('Images/jumboback.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.grid{
+	background-color:black;
+	color:white;
+	min-height:300px;
+	font-size:14px;
+}
+.package{
+	background-color:black;
+	color:white;
+}
+.image{
+	height:200px;
+}
+.footer{
+	color:black;
+	min-height:50px;
+	text-align:center;
+}
+.honcho{
+	text-align:center;
+	letter-spacing:2.5px;
+}
+.team{
+	text-align:center;
+}
+.social{
+	height:40px;
+	white-space:nowrap;
+	overflow:hidden;
+	display:inline;
+}
+#memberimage{
+	height:350px;
+	background-attachment:fixed;
+}
+#askbtn{
+	text-align:center;
+}
+#conortext{
+	text-align:center;
+	font-size:19px;
+}
+#map{
+	height:420px;
+	width:500px;
+}
+#contact{
+	letter-spacing:2px;
+}
+#rowright{
+	letter-spacing:2px;
+	font-size:25px;
+}
